@@ -63,7 +63,7 @@ main {
 }
 
 .cards {
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 h2, p {
@@ -83,7 +83,7 @@ h2, p {
 .card {
   max-width:40vw;
   max-height: 70vh;
-  height: fit-content;
+  /* height: fit-content; */
   /* border: 1px solid black; */
   border-radius: 5px;
   padding: 2rem 1.5rem 2rem 1.5rem;
@@ -109,12 +109,16 @@ h2, p {
 }
 
 .card-2 {
-  /* transform: scaleY(1.1); */
+  transform: scale(1.091);
   background: linear-gradient(var(--light-purple), var(--purple));
   color: white;
-  padding: 4rem 1.5rem 3rem 1.5rem;
-  max-height: 62vh;
-  transform: translateY(-2rem);
+  /* padding: 4rem 1.5rem 3rem 1.5rem; */
+  /* max-height: 62vh; */
+  /* transform: translateY(-2rem); */
+}
+
+.card-2 * {
+  transform: scale(0.91);
 }
 
 .price-2 {
