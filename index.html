@@ -9,16 +9,20 @@
     
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | Pricing Component with toggle</title>
   </head>
   <body>
     <main>
       <div class="heading">
         <h1>Our Pricing</h1>
-        <div class="toggle">
-          <label for="">Annually</label>
-          <div class="toggle">toggle</div>
-          <label for="">Monthly</label>
+        <div class="pricing">
+          <p>Annually</p>
+          <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+          </label>
+          <p>Monthly</p>
         </div>
       </div>
       <div class="cards">
@@ -30,7 +34,7 @@
             <li>2 Users Allowed</li>
             <li>Send up to 3 GB</li>
           </ul>
-          <a href="">LEARN MORE</a>
+          <a href="#">LEARN MORE</a>
         </div>
         <div class="card featured">
           <h2 class="title">Professional</h2>
@@ -40,7 +44,7 @@
             <li>5 Users Allowed</li>
             <li>Send up to 10 GB</li>
           </ul>
-          <a href="">LEARN MORE</a>
+          <a href="#">LEARN MORE</a>
         </div>
         <div class="card">
           <h2 class="title">Master</h2>
@@ -50,7 +54,7 @@
             <li>10 Users Allowed</li>
             <li>Send up to 20 GB</li>
           </ul>
-          <a href="">LEARN MORE</a>
+          <a href="#">LEARN MORE</a>
         </div>
       </div>
     </main>
