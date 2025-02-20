@@ -26,7 +26,7 @@ body {
   background-color: var(--lighter-grayish-blue);
   min-height: 100vh;
   display: grid;
-  justify-content: center;
+  place-content: center;
   text-align: center;
   font-family: 'Montserrat';
   color: var(--grayish-blue);
@@ -38,17 +38,18 @@ main, .cards, .toggle {
 
 .main-container {
   flex-direction: column;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   width: 100%;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 li {
-  padding: 1rem 0 1rem 0;
+  padding: 1.3rem 0 1.3rem 0;
   border-bottom: solid 1px var(--light-grayish-blue);
+  font-size: 1.1rem;
 }
 
 ul {
@@ -60,9 +61,9 @@ a {
   border: 1px solid transparent;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 0.77rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
-  padding: 0.8rem;
+  padding: 1.1rem;
   color: white;
   margin-top: 2rem;
   background: linear-gradient(to right, var(--light-purple), var(--purple));
@@ -133,7 +134,7 @@ input:checked + .slider::before {
 
 .cards {
   display: flex;
-  padding-top: 4rem;
+  padding-top: 5rem;
   width: 75vw;
 }
 
@@ -145,14 +146,15 @@ input:checked + .slider::before {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  /* width: 278px; */
 }
 
 .featured {
   height: fit-content;
   color: white;
   background: linear-gradient(var(--light-purple), var(--purple));
-  padding: 3rem 2rem 3rem 2rem;
-  transform: translateY(-1rem);
+  padding: 3.4rem 2rem 3.4rem 2rem;
+  transform: translateY(-1.4rem);
 }
 
 .featured .price-annually,
@@ -174,8 +176,8 @@ input:checked + .slider::before {
 
 .price {
   padding: 1rem;
-  border-bottom: solid 1px var(--light-grayish-blue);
-  font-size: 4rem;
+  /* border-bottom: solid 1px var(--light-grayish-blue); */
+  font-size: 4.5rem;
   color: var(--dark-grayish-blue);
 }
 
@@ -188,8 +190,9 @@ input:checked + .slider::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    font-size: 2.3rem;
     color: hsl(232, 13%, 33%);
+    border-bottom: solid 1px var(--light-grayish-blue);
 }
 
 .price-monthly {
@@ -202,13 +205,30 @@ input:checked + .slider::before {
     background-position: top right;
     padding: 4rem 1.5rem 4rem 1.5rem;  
   }
+  a {
+    padding: 0.9rem;
+    font-size: 0.77rem;
+  }
+  .card {
+    width: 278px;
+  }
   .cards {
     flex-direction: column;
     row-gap: 2rem;
     width: 100%;
   }
+  li {
+    font-size: 1rem;
+  }
   .featured {
     transform: translate(0);
     padding: 2rem;
+  }
+  .price {
+    font-size: 4rem;
+  }
+  .price-annually,
+  .price-monthly {
+    font-size: 2rem;
   }
 }
